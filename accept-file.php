@@ -6,9 +6,9 @@ move_uploaded_file($_FILES['zip']['tmp_name'],'zwoptex_export/upload.zip');
 shell_exec("unzip zwoptex_export/upload.zip -d zwoptex_export/");
 shell_exec("rm zwoptex_export/upload.zip");
 shell_exec("rm -rf zwoptex_export/__*");
-var_dump(shell_exec("TexturePacker --size-constraints POT --disable-rotation --data out.json --format spriter --sheet out.png zwoptex_export/ 2>&1"));
+var_dump(shell_exec("TexturePacker --size-constraints POT --disable-rotation --data out.json --format spriter --sheet out.png --trim-mode None zwoptex_export/ 2>&1"));
 ?><br/><br/><?php
-var_dump(shell_exec("TexturePacker --size-constraints POT --disable-rotation --data out.plist --format cocos2d --sheet out.png zwoptex_export/ 2>&1"));
+var_dump(shell_exec("TexturePacker --size-constraints POT --disable-rotation --data out.plist --format cocos2d --sheet out.png --trim-mode None zwoptex_export/ 2>&1"));
 shell_exec("rm -rf zwoptex_export");
 ?>
 <br/>

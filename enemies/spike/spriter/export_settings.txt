@@ -1,0 +1,3 @@
+IDLE:
+interval:120ms
+wid/hei:25%

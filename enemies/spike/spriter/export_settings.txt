@@ -1,3 +1,6 @@
 IDLE:
-interval:120ms
+interval:75ms
 wid/hei:25%
+
+HIT:
+interval:33ms

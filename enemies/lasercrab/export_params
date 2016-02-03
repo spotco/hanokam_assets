@@ -1,0 +1,13 @@
+WIDTH: 40% HEIGHT: 40%
+
+DEFAULT:
+UW_idle: 100ms
+
+UW_laser_firing: 50ms
+UW_stun: 30ms
+
+AIR_idle: 75ms
+AIR_laser_charge: 120ms
+AIR_laser_firing: 30ms
+AIR_hurt: 30ms
+AIR_die: 50ms
